@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>autoNyx</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    body {
+      background: #0f0f0f;
+      color: #eaeaea;
+      line-height: 1.6;
+      background-image: url(istockphoto-2186725773-612x612.jpg);
+      background-color: rgba(0, 0, 0, 0.5);
+      background-blend-mode: overlay;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: #fffefe;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    .hero button {
+      padding: 12px 24px;
+      background: #ffffff;
+      color: #000;
+      border: none;
+      font-weight: 600;
+      cursor: pointer;
+      border-radius: 6px;
+    }
+
+    .box {
+      background: #161616;
+      padding: 25px;
+      border-radius: 10px;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      color: #777;
+    }
+
+    h2 {
+        border-top: 2px solid white;
+        padding-top: 10px;
+    }
+
+    .para {
+        width: 100%;
+        display: flex;
+        gap: 20px;
+        font-size: large;
+    }
+
+    /* ---------- RESPONSIVE DESIGN ---------- */
+
+@media (max-width: 1024px) {
+  section {
+    padding: 50px 20px;
+  }
+
+  h1 {
+    font-size: 2.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 40px 16px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  .hero {
+    text-align: center;
+  }
+
+  .hero button {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+
+  .two-col {
+    grid-template-columns: 1fr;
+  }
+
+  .box {
+    padding: 20px;
+  }
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Hello, I'm Nyx</h1>
+    <hr>
+    <h1>I help content creators stay consistent using content automation.</h1>
+    <p>I handle posting, scheduling, and content systems so you can focus on creating.</p>
+    <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+      Get a 3-day free test
+    </button>
+  </section>
+
+  <!-- WHAT I DO -->
+
+  <section>
+    <h2 class="h2">What I help you with</h2>
+    <ul>
+      <li>• Automated posting & scheduling</li>
+      <li>• Content repurposing across platforms</li>
+      <li>• Simple landing pages for creator links</li>
+    </ul>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section>
+    <h2>How it works</h2>
+    <ul>
+      <li>1. You share your content</li>
+      <li>2. I automate posting & scheduling</li>
+      <li>3. Content goes out consistently</li>
+      <li>4. You stay active without daily effort</li>
+    </ul>
+  </section>
+
+  <!-- PROOF -->
+  <section>
+    <h2>Automation demo</h2>
+    <div class="box">
+      <p>I use automation workflows to handle posting, scheduling, and repurposing.</p>
+      <p><strong>Demo coming soon.</strong></p>
+    </div>
+  </section>
+
+  <!-- FOR / NOT FOR -->
+  <section>
+    <h2>This is for you</h2>
+    <div class="two-col">
+      <div class="box">
+        <strong>Good fit if:</strong>
+        <ul>
+          <li>• You create content regularly</li>
+          <li>• You struggle with consistency</li>
+          <li>• You want systems</li>
+        </ul>
+      </div>
+      <div class="box">
+        <strong>Not for:</strong>
+        <ul>
+          <li>• Viral-only expectations</li>
+          <li>• Growth guarantees</li>
+          <li>• Daily hand-holding</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Work with me</h2>
+    <p>I work async and offer a 3-day free test.</p>
+    <p>Contact me below!</p>
+    <p class="para">
+      <a href="https://instagram.com/yourusername" target="_blank">Instagram</a> · 
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=automationbynyx@gmail.com&su=autoNyx%20Inquiry" target="_blank">
+  Email
+</a>
+
+    </p>
+  </section>
+
+  <footer>
+    © 2025 · autoNyx · Content Automation for Creators
+  </footer>
+
+</body>
+</html>
